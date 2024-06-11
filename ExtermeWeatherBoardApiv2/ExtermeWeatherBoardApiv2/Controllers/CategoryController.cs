@@ -16,8 +16,8 @@ namespace ExtermeWeatherBoardApiv2.Controllers
             _context = context;
         }
         // GET: api/<CategoryController>
-        [HttpGet]
-        public IEnumerable<Category?>? Get()
+        [HttpGet("GetAll")]
+        public List<Category?>? GetAll()
         {
             var categories = _context.Categories.ToList();
             if (categories == null)
