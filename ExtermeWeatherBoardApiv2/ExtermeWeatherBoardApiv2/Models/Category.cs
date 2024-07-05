@@ -9,11 +9,11 @@ namespace ExtremeWeatherBoardApiv2.Models
         [Required]
         public string? Title { get; set; }
         [Required]
-        public virtual DateTime CreatedDate { get; set; }
+        public virtual DateTime TimeStamp { get; set; }
         [InverseProperty("ParentCategory")]
         public virtual ICollection<SubCategory>? SubCategories { get; set; }
         public int CreatorAdminUserDataId { get; set; }
         [ForeignKey("CreatorAdminUserDataId")]
-        public virtual AdminUserData? CreatorAdminUser { get; set; }
+        public virtual AdminUserData? CreatorAdminUserData { get; set; }
     }
 }

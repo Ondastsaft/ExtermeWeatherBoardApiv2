@@ -11,16 +11,13 @@ namespace ExtremeWeatherBoardApiv2.Models
         public string? Text { get; set; }
         [Required]
         public string? Title { get; set; }
-        [Required]
-        public DateTime PostedAt { get; set; }
+        public bool IsReported { get; set; }
+        public DateTime TimeStamp { get; set; }
         public int? CommentUserDataId { get; set; }
         [ForeignKey("CommentUserDataId")]
         public virtual UserData? CommentUserData { get; set; }
-        public int? CommentAdminUserDataId { get; set; }
-        [ForeignKey("CommentAdminUserDataId")]
-        public virtual AdminUserData? CommentAdminUserData { get; set; }
-        public int CommentThreadId { get; set; }
-        [ForeignKey("CommentThreadId")]
-        public DiscussionThread? CommentThread { get; set; }
+        public int ParentDiscussionThreadId { get; set; }
+        [ForeignKey("ParentDiscussionThreadId")]
+        public DiscussionThread? ParentDiscussionThread { get; set; }
     }
 }
