@@ -1,0 +1,6 @@
+@ExtremeWeatherBoardApi_HostAddress = http://localhost:5062
+
+GET {{ExtremeWeatherBoardApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
