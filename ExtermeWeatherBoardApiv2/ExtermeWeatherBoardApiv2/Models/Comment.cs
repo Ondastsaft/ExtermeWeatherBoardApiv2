@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.InteropServices;
 
-namespace ExtremeWeatherBoardApiv2.Models
+namespace ExtermeWeatherBoardApiv2.Models
 {
     public class Comment
     {

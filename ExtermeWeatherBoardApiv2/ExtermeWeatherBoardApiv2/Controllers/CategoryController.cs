@@ -1,5 +1,5 @@
 ﻿using ExtermeWeatherBoardApiv2.Data;
-using ExtremeWeatherBoardApiv2.Models;
+using ExtermeWeatherBoardApiv2.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;

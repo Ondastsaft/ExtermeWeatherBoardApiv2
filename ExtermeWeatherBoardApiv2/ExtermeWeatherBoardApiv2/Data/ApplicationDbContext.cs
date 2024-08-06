@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using ExtremeWeatherBoardApiv2.Models;
+using ExtermeWeatherBoardApiv2.Models;
 
 namespace ExtermeWeatherBoardApiv2.Data
 {
@@ -60,7 +60,7 @@ namespace ExtermeWeatherBoardApiv2.Data
 
         public DbSet<UserData> UserDatas { get; set; } = default!;
         public DbSet<AdminUserData> AdminUserDatas { get; set; } = default!;
-        public DbSet<ExtremeWeatherBoardApiv2.Models.AdminLog> AdminLogs { get; set; } = default!;
+        public DbSet<AdminLog> AdminLogs { get; set; } = default!;
         public DbSet<Message> Messages { get; set; } = default!;
         public DbSet<Category> Categories { get; set; } = default!;
         public DbSet<SubCategory> SubCategories { get; set; } = default!;

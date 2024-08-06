@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
 using System.ComponentModel.DataAnnotations.Schema;
-namespace ExtremeWeatherBoardApiv2.Models
+
+namespace ExtermeWeatherBoardApiv2.Models
 {
     public class DiscussionThread
     {
@@ -12,7 +12,7 @@ namespace ExtremeWeatherBoardApiv2.Models
         public string? Text { get; set; }
         public DateTime TimeStamp { get; set; }
         public bool IsReported { get; set; }
-        public int? DiscussionThreadUserDataId { get; set; }
+        public int DiscussionThreadUserDataId { get; set; }
         [ForeignKey("DiscussionThreadUserDataId")]
         public virtual UserData? DiscussionThreadUserData { get; set; }
         public int SubCategoryId { get; set; }
